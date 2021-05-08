@@ -9,6 +9,15 @@ MidasFitness is a JavaFX application using the Eclipse IDE.  It is a fitness app
 To run MidasFitness, you will need to import the files into your eclipse-workspace folder
 1. Download the ZIP file, this will contain the Application and eclipse's hidden files
 2. Locate your eclipse-workspace folder.  You can typically find Under C:Users -> USERNAME - eclipse-workspace
-3. Unzip the file in the eclipse-workspace folder.  You should see only one folder with the name MidasFitness
+3. Open the ZIP file and keep accessing subsequent folders until you reach a folder simply titled, MIDAS.  Copy the MIDAS folder into your eclipse-workspace folder.
 4. Boot up eclipse.
-5. 
+5. In eclipse, select File -> Import -> General -> Existing Projects into Workspace
+6. Under select root directory, click browse, and select the MIDAS folder, now in your eclipse-workspace.
+7. Click Finish
+8. You should now see MIDAS in eclipse's Package explorer.  Open MIDAS -> src -> application -> Main
+9. Ensure you have JavaFX installed on eclipse
+10. Click Run
+
+# Notes about Functionality
+
+The application uses CSV files to save and read information.  This is helpful as the program will remember all user information given, meaning you will not have to re-input every time you open the program.  The program also uses the computer's calandar instance to get the date.  This is used to identify if a new day has begun, and if so, your daily goals will be reset so you can start the new day.  You can add foods, create new foods, and add workouts.  You do not have the ability to create new workouts, however all application funcitonality is availible.  The only exception to this is the meal plan suggestions, which currently does not work as it was broken during an optimization attempt.
